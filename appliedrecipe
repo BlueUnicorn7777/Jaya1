@@ -15,7 +15,7 @@ do_fetch(){
 cd ${THISDIR}/${PN}-${PV}
 git fetch --depth=1 origin B1
 git checkout B1
-git pull
+git pull --depth=1 origin B1
 }
 
 do_compile() {
